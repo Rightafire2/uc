@@ -1,6 +1,3 @@
-import Footer from "../Components/Footer"
-
-
 export const Supplements = ({ mode, toggleMode }) => {
     return (
         <>

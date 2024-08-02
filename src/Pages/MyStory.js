@@ -1,6 +1,4 @@
 import { StoryImg } from "../Assets/Configurations/ChangeSizeStory"
-import Navigation from "../Components/Navbar"
-import Footer from "../Components/Footer"
 
 export const MyStory = ({ mode, toggleMode }) => {
     return (

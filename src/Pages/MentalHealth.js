@@ -1,4 +1,3 @@
-import Footer from "../Components/Footer"
 import { HealthImg } from "../Assets/Configurations/ChangeSizeHealth"
 
 export const MentalHealth = ({ mode, toggleMode }) => {

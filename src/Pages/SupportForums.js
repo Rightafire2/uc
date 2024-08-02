@@ -1,5 +1,3 @@
-import Navigation from "../Components/Navbar";
-
 export const SupportForums = ({ mode, toggleMode }) => {
     return(
         <>

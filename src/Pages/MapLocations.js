@@ -1,4 +1,3 @@
-import Footer from '../Components/Footer'
 import 'leaflet/dist/leaflet.css'
 import { MapSource } from '../Components/Map'
 
