@@ -40,7 +40,7 @@ const Navigation = ({ mode, toggleMode }) => {
                   </Link>
                 </Nav.Link>
                 <NavDropdown title="Configuration" id="basic-nav-dropdown" style={{ textDecoration: "none", color: "blue" }} tabIndex={0}>
-                  <NavDropdown.Item href="#action/3.1" onClick={toggleMode} className={`text-${mode === 'light' ? 'dark' : 'white'}`} tabIndex={0}>Change Color</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1" onClick={() => toggleMode()} className={`text-${mode == 'light' ? 'dark' : 'white'}`} tabIndex={0}>Change Color</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
