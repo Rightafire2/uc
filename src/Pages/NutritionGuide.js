@@ -1,4 +1,4 @@
-import { NutritionImg } from "../Assets/Configurations/ChangeSizeNutrition"
+import { NutritionImg } from "../Assets/Configurations/ChangeSizeNutrition.js"
 import pdf from "../Assets/Recipes/smoothie.pdf"
 
 export const NutritionGuide = ({ mode, toggleMode }) => {

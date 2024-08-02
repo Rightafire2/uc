@@ -1,4 +1,4 @@
-import { HealthImg } from "../Assets/Configurations/ChangeSizeHealth"
+import { HealthImg } from "../Assets/Configurations/ChangeSizeHealth.js"
 
 export const MentalHealth = ({ mode, toggleMode }) => {
     return (

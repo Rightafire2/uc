@@ -1,4 +1,4 @@
-import { StoryImg } from "../Assets/Configurations/ChangeSizeStory"
+import { StoryImg } from "../Assets/Configurations/ChangeSizeStory.js"
 
 export const MyStory = ({ mode, toggleMode }) => {
     return (

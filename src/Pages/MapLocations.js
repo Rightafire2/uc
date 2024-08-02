@@ -1,5 +1,5 @@
 import 'leaflet/dist/leaflet.css'
-import { MapSource } from '../Components/Map'
+import { MapSource } from '../Components/Map.js'
 
 export const MyMap = ({ mode, toggleMode }) => {
     
