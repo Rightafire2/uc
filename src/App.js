@@ -16,18 +16,7 @@ const App = () => {
 
     const [mode, setMode] = useState('light');
 
-
     const toggleMode = () => {
-        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
-        console.log('Mode toggled');
-      };
-    
-      const handleClick = (event) => {
-        event.preventDefault();
-        toggleMode();
-      };
-
-/*     const toggleMode = () => {
         if (mode === 'light') {
             setMode('dark');
             document.body.style.background = '#121212';
@@ -35,7 +24,7 @@ const App = () => {
             setMode('light');
             document.body.style.background = 'white';
         }
-    } */
+    }
 
     const router = createBrowserRouter([
                 {
