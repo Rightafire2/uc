@@ -7,7 +7,7 @@ const Home = ({ mode, toggleMode }) => {
   return (
     <div>
     <br />
-    <h1>Ulcerative Colitis - my personal journey </h1>
+    <h1 className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Ulcerative Colitis - my personal journey </h1>
     <br />
     <main className='main'>
     <section>

@@ -3,27 +3,27 @@ import pdf from "../Assets/Recipes/smoothie.pdf"
 import Footer from "../Components/Footer"
 
 
-export const NutritionGuide = () => {
+export const NutritionGuide = ({ mode, toggleMode }) => {
     return (
         <>
         <br />
-        <h1 id="guide">Nutrition Guide</h1>
+        <h1 id="guide" className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Nutrition Guide</h1>
         <NutritionImg />
 
 
 
     <div class="row align-items-start">
         <div class="col-md-5 text-start text-md-start">
-        <p class="lead my-4 text-muted">What I learned about nutrition, a 4 week menu planner with recipe links</p>
-        <h1>
-          <div class="display-6 text-muted">Meal Planner:</div>
+        <p className={`text-${mode === 'light' ? 'dark' : 'white'}`}>What I learned about nutrition, a 4 week menu planner with recipe links</p>
+        <h1 class="display-6">
+          <div className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Meal Planner:</div>
         </h1>
         <ul>
-          <li><a href="#Week_1">Week 1</a></li>
-          <li><a href="#Week_2">Week 2</a></li>
-          <li><a href="#Week_3">Week 3</a></li>
-          <li><a href="#Week_4">Week 4</a></li>
-        </ul>         
+          <li><a href="#Week_1" className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Week 1</a></li>
+          <li><a href="#Week_2" className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Week 2</a></li>
+          <li><a href="#Week_3" className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Week 3</a></li>
+          <li><a href="#Week_4" className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Week 4</a></li>
+        </ul>
       
       </div>
       <div class="col-md-5 text-center d-none d-md-block">
@@ -35,8 +35,8 @@ export const NutritionGuide = () => {
     <section id="Week_1">
     <div class="row align-items-start">
       <div class="col-md-5 text-start text-md-start">
-        <h1>
-          <div class="display-6 text-muted text-start">Week 1:</div>
+        <h1 class="display-6">
+          <div className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Week 1:</div>
         </h1>
       </div>
       <div class="table-responsive">
@@ -106,8 +106,8 @@ export const NutritionGuide = () => {
     <section id="Week_2">
     <div class="row align-items-start">
       <div class="col-md-5 text-start text-md-start">
-        <h1>
-          <div class="display-6 text-muted text-start">Week 2:</div>
+        <h1 class="display-6">
+          <div className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Week 2:</div>
         </h1>
       </div>
       <div class="table-responsive">
@@ -176,8 +176,8 @@ export const NutritionGuide = () => {
 <section id="Week_3">
     <div class="row align-items-start">
       <div class="col-md-5 text-start text-md-start">
-        <h1>
-          <div class="display-6 text-muted text-start">Week 3:</div>
+        <h1 class="display-6">
+          <div className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Week 3:</div>
         </h1>
       </div>
       <div class="table-responsive">
@@ -246,8 +246,8 @@ export const NutritionGuide = () => {
 <section id="Week_4">
     <div class="row align-items-start">
       <div class="col-md-5 text-start text-md-start">
-        <h1>
-          <div class="display-6 text-muted text-start">Week 4:</div>
+        <h1 class="display-6">
+          <div className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Week 4:</div>
         </h1>
       </div>
       <div class="table-responsive">
@@ -311,8 +311,9 @@ export const NutritionGuide = () => {
     <a href="#guide">Back to Meal Planner</a>
     <br />
     <br />
+    <br />
+    <br />
 </section>
-<Footer />
         </>
     )
 }

@@ -19,7 +19,7 @@ const App = () => {
     const toggleMode = () => {
         if (mode === 'light') {
             setMode('dark');
-            document.body.style.background = 'black';
+            document.body.style.background = '#121212';
         } else {
             setMode('light');
             document.body.style.background = 'white';
@@ -27,62 +27,96 @@ const App = () => {
     }
 
     const router = createBrowserRouter([
-        {
-            element: <Navigation mode={'light'} toggleMode={toggleMode}/>,
-            children: [
                 {
                     path: "/",
                     element: (
                         <div>
-                            <Navigation />
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
                             <Home mode={mode} toggleMode={toggleMode}/>
-                            <Footer />
+                            <Footer mode={mode} toggleMode={toggleMode}/>
                         </div>
                     )
                 },
                 {
                     path: "/MyStory",
-                    element: <MyStory />
+                    element: (
+                        <div>
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
+                            <MyStory mode={mode} toggleMode={toggleMode}/>
+                            <Footer mode={mode} toggleMode={toggleMode}/>
+                        </div>
+                    )
                 },
                 {
                     path: "/NutritionGuide",
-                    element: <NutritionGuide />
+                    element: (
+                        <div>
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
+                            <NutritionGuide mode={mode} toggleMode={toggleMode}/>
+                            <Footer mode={mode} toggleMode={toggleMode}/>
+                        </div>
+                    )
                 },
                 {
                     path: "/Supplements",
-                    element: <Supplements />
+                    element: (
+                        <div>
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
+                            <Supplements mode={mode} toggleMode={toggleMode} />
+                            <Footer mode={mode} toggleMode={toggleMode} />
+                        </div>
+                    )
                 },
                 {
                     path: "/MentalHealth",
-                    element: <MentalHealth />
+                    element: (
+                        <div>
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
+                            <MentalHealth mode={mode} toggleMode={toggleMode} />
+                            <Footer mode={mode} toggleMode={toggleMode} />
+                        </div>
+                    )
                 },
                 {
                     path: "/Map",
-                    element: <MyMap />
-                }
-    
-            ]
-    
-        },
+                    element: (
+                        <div>
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
+                            <MyMap mode={mode} toggleMode={toggleMode} />
+                            <Footer mode={mode} toggleMode={toggleMode} />
+                        </div>
+                    )
+                },
         {
-            element: <Footer mode={mode} toggleMode={toggleMode}/>,
-            children: [
-                {
                     path: "/ContactMe",
-                    element: <ContactMe />
+                    element: (
+                        <div>
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
+                            <ContactMe mode={mode} toggleMode={toggleMode} />
+                            <Footer mode={mode} toggleMode={toggleMode} />
+                        </div>
+                    )
                 },
                 {
                     path: "/UsefulLinks",
-                    element: <UsefulLinks />
+                    element: (
+                        <div>
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
+                            <UsefulLinks mode={mode} toggleMode={toggleMode} />
+                            <Footer mode={mode} toggleMode={toggleMode} />
+                        </div>
+                    )
                 },
                 {
                     path: "/SupportForums",
-                    element: <SupportForums />
+                    element: (
+                        <div>
+                            <Navigation mode={mode} toggleMode={toggleMode}/>
+                            <SupportForums mode={mode} toggleMode={toggleMode} />
+                            <Footer mode={mode} toggleMode={toggleMode} />
+                        </div>
+                    )
                 }
-    
-            ]
-    
-        }
     ])
 
     return (

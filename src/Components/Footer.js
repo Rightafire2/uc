@@ -5,9 +5,9 @@ function Footer({ mode, toggleMode }) {
     return (
         <>
         <Navbar className={`navbar navbar-expand-lg navbar-${mode === 'light' ? 'dark' : 'white'} bg-${mode === 'light' ? 'dark' : 'white'} text-${mode}`} fixed='bottom'>
-            <Navbar.Brand href="/App.js" className="ms-5">
+            <Navbar.Brand href="/App.js" className={`ms-5 text-${mode === 'light' ? 'gray' : 'white'}`}>
                 <Nav.Link>
-                    <Link to={"/ContactMe"} style={{ textDecoration: "none", color: "white" }}>
+                    <Link to={"/ContactMe"} style={{ textDecoration: "none" }}>
                         Contact Me
                     </Link>    
                 </Nav.Link>

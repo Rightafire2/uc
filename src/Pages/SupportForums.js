@@ -1,19 +1,18 @@
 import Navigation from "../Components/Navbar";
 
-export const SupportForums = () => {
+export const SupportForums = ({ mode, toggleMode }) => {
     return(
         <>
-        <Navigation />
         <br />
-        <h1>Support Forums</h1>
-        <p>
+        <h1 className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Support Forums</h1>
+        <p className={`text-${mode === 'light' ? 'dark' : 'white'}`}>
             Support Forums I am aware of.
         </p>
-        <p>
+        <p className={`text-${mode === 'light' ? 'dark' : 'white'}`}>
             Note: I didn’t post anything on these forums, but reading the posts were very helpful for me.
         </p>
         <br />
-        <p>
+        <p className={`text-${mode === 'light' ? 'dark' : 'white'}`}>
             To Do: Listing of reddit pages and other forums I used
         </p>
         </>
