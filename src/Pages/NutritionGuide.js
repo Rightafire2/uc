@@ -1,7 +1,5 @@
 import { NutritionImg } from "../Assets/Configurations/ChangeSizeNutrition"
 import pdf from "../Assets/Recipes/smoothie.pdf"
-import Footer from "../Components/Footer"
-
 
 export const NutritionGuide = ({ mode, toggleMode }) => {
     return (
