@@ -33,7 +33,7 @@ export const MapSource = () => {
     ]
     
     const newIcon = new Icon({
-        iconUrl: require('leaflet/dist/images/marker-icon.png'),
+        iconUrl: 'leaflet/dist/images/marker-icon.png',
         iconSize: [25, 25]
     })
     
