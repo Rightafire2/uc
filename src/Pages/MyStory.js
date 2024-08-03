@@ -51,7 +51,7 @@ export const MyStory = ({ mode, toggleMode }) => {
             of treatment with biologics. We were also told that we should also prepare for the worst case scenario where the biologics 
             would not work either and it may require surgery (removal of the colon). 
             In a short span of 6 weeks, I had gone from perfect to health to potentially losing my colon. I had to pause thinking about 
-            completing course work and future career plans; the immediate focus was on getting healthy and geting back on my feet
+            completing course work and future career plans; the immediate focus was on getting healthy and getting back on my feet.
           </p>
           <br />
 
