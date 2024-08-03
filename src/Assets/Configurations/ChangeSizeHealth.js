@@ -15,7 +15,7 @@ export const HealthImg = () => {
     return (
         <img
             src={image}
-            class="col-md-6 float-md-end mb-3 ms-md-3"
+            class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid"
             alt="Mental Health"
             onMouseEnter={onOver}
             onMouseLeave={offOver}

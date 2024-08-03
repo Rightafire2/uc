@@ -22,6 +22,9 @@ export const MentalHealth = ({ mode, toggleMode }) => {
     <p className={`text-${mode === 'light' ? 'dark' : 'white'}`}>
         I hope none of you have (or your loved ones) have to deal with this disease. Please be aware of the mental toll it can take and seek help early. 
     </p>
+    <br />
+    <br />
+    <br />
     </>
     )
 }

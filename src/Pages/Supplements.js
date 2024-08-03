@@ -22,8 +22,11 @@ export const Supplements = ({ mode, toggleMode }) => {
               </p>
               <h2 className={`text-${mode === 'light' ? 'dark' : 'white'}`}>Protein Supplements:</h2>
               <p className={`text-${mode === 'light' ? 'dark' : 'white'}`}>
-                Getting enough proteins is key to recovery. In addition to eggs and cheese, I use hemp hearts, nuts and lentils. For a period of time, I also used protein drinks (fairlife) as part of my daily routine
+                Getting enough proteins is key to recovery. In addition to eggs and cheese, I use hemp hearts, nuts and lentils. For a period of time, I also used protein drinks (fairlife) as part of my daily routine.
               </p>
+              <br />
+              <br />
+              <br />
               </>
     )
 }

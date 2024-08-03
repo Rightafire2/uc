@@ -5,14 +5,14 @@ import { Outlet, Link } from 'react-router-dom';
 const Navigation = ({ mode, toggleMode }) => {
     return (
       <>
-        <Navbar className={`navbar navbar-expand-lg navbar-dark bg-${mode === 'light' ? 'dark' : 'light'} text-${mode}`}>
+        <Navbar collapseOnSelect expand="md" className={`navbar navbar-dark bg-${mode === 'light' ? 'dark' : 'light'} text-${mode}`}>
             <Navbar.Brand className={`ms-5 text-${mode === 'light' ? 'gray' : 'white'}`} tabIndex={0}>
               <Link to={"/"} style={{ textDecoration: "none", color: `${mode === 'light' ? 'dark' : 'light'}`}}>
                 Ulcerative Colitis
               </Link>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ms-auto">
                 <Nav.Link tabIndex={0}>
                   <Link to={"/MyStory"} style={{ textDecoration: "none", color: "gray"}} tabIndex={0}>

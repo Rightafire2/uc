@@ -103,6 +103,7 @@ export const MyStory = ({ mode, toggleMode }) => {
           </p>
           <br />
           <br />
+          <br />
     </>
     )
 }

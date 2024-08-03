@@ -12,8 +12,8 @@ function Footer({ mode, toggleMode }) {
                     </Link>    
                 </Nav.Link>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ms-auto">
               <Nav.Link>
                     <Link to={"/UsefulLinks"} style={{ textDecoration: "none", color: "gray" }}>

@@ -15,7 +15,7 @@ export const StoryImg = () => {
     return (
         <img
             src={image}
-            class="col-md-6 float-md-end mb-3 ms-md-3"
+            class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid"
             alt="My Story | Amogh Bharadwaj"
             onMouseEnter={onOver}
             onMouseLeave={offOver}

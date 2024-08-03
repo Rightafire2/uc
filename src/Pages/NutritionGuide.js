@@ -311,6 +311,7 @@ export const NutritionGuide = ({ mode, toggleMode }) => {
     <br />
     <br />
     <br />
+    <br />
 </section>
         </>
     )
